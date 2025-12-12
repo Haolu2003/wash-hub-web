@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 export default function Home() {
   // Animation variants để tái sử dụng
   const fadeUp = {
@@ -42,9 +42,9 @@ export default function Home() {
             Our Page
           </a>
 
-          <a href="/our-news" className="hover:text-orange-500 transition">
+          <Link to="/our-news" className="hover:text-orange-500 transition">
             Our News
-          </a>
+          </Link>
         </nav>
 
         {/* RIGHT: EMPTY (to balance layout) */}
